@@ -1,0 +1,93 @@
+ï»¿Marine Recreational Information Program Query Results
+
+Your Query Parameters:
+
+·Query: MRIP CATCH TIME SERIES
+
+·Year: 1981 - 2025
+
+·Summary:ANNUAL
+
+·Fishing Year: CALENDAR YEAR (JANUARY 1 - DECEMBER 31)
+
+·Geographic Area: MID-ATLANTIC
+
+·Species: BLACK SEA BASS
+
+·Fishing Mode: ALL MODES COMBINED
+
+·Fishing Area: ALL AREAS COMBINED
+
+·Type of Catch: HARVEST (TYPE A + B1)
+
+Information:
+
+·WEIGHT OF FISH (KILOGRAMS)
+
+MRIP does not support the use of estimates with a percent standard error above 50 and in those instances, recommends considering higher levels of aggregation (e.g., across states, geographic regions, or fishing modes).
+
+Estimates (excluding for-hire mode estimates from the For-Hire Survey) from 1981-2025 are calibrated to reflect the 2026 Improved Fishing Effort Survey (FES) design.
+
+As of 2026 wave 1, all estimates of shore and private/rental boat fishing effort and catch are now based on the 2026 Improved Fishing Effort Survey (FES) design.
+
+MRIP estimates for Louisiana are not available after 2013. State produced estimates are available through the MRIP National Query. For more information on state run surveys and estimates, please click <a href='http://www.wlf.louisiana.gov/lacreel' target='_blank'>here</a>.
+
+Estimates for Puerto Rico have not been calibrated and those prior to 2014 are based on Marine Recreational Fisheries Statistics Survey methodology.
+
+'             
+
+As part of the government's guidelines for statistical programs, the Office of Management and Budget requires federal agencies to establish their own criteria for statistical precision (Standard 4.1.5 in OMB Standards and Guidelines for Statistical Surveys)
+
+Upper and lower confidence limits are calculated using a standard 95% confidence interval. The lower 95% confidence interval is truncated at 0 to match graph output.
+
+<a href='https://www.fisheries.noaa.gov/recreational-fishing-data/recreational-fishing-data-glossary#percent-standard-error-(pse)' target='_blank'><b>PSE</b></a>, or percent standard error, is automatically included in all outputs. The higher an estimate's Percent Standard Error, or PSE, the larger the margin of error around the estimate, which means there is more uncertainty in the estimate.
+
+Estimates with a percent standard error exceeding 50 are not statistically different from zero using a standard 95% confidence interval.  Note this significance comparison is not suggesting these estimates all equal zero, but is rather intended to illustrate their high uncertainty.
+
+"Estimate Status","Year","Fishing Year","Common Name","Cumulative Through","PSE Harvest (A+B1) Total Weight (kg)","Does Harvest (A+B1) Total Weight (kg) Meet MRIP Standard","Is Harvest (A+B1) Total Weight (kg) Significantly Different From 0","Harvest (A+B1) Total Weight (kg)","Harvest (A+B1) Total Weight (kg) Lower 95% Confidence Limit","Harvest (A+B1) Total Weight (kg) Upper 95% Confidence Limit","Landings (no.) without Size Information"
+"FINAL",1981,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",37.5,"CAUTION","YES",428902,113659,744145,0
+"FINAL",1982,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",19,"YES","YES",3984322,2500561,5468084,0
+"FINAL",1983,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",20.6,"YES","YES",1861807,1110084,2613530,0
+"FINAL",1984,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",23.9,"YES","YES",590516,313894,867137,0
+"FINAL",1985,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",17.6,"YES","YES",1375565,901050,1850081,0
+"FINAL",1986,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",23.4,"YES","YES",3840564,2079128,5602001,0
+"FINAL",1987,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",21.6,"YES","YES",498280,287328,709232,0
+"FINAL",1988,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",17.8,"YES","YES",1060063,690228,1429898,0
+"FINAL",1989,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",20.3,"YES","YES",1452058,874313,2029803,0
+"FINAL",1990,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",20,"YES","YES",1210726,736122,1685331,0
+"FINAL",1991,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13.5,"YES","YES",1376925,1012591,1741259,4834
+"FINAL",1992,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",15.4,"YES","YES",1049460,732691,1366229,0
+"FINAL",1993,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",36.8,"CAUTION","YES",1826963,509211,3144714,0
+"FINAL",1994,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",32.1,"CAUTION","YES",1130073,419076,1841069,0
+"FINAL",1995,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13,"YES","YES",1769205,1318412,2219999,0
+"FINAL",1996,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",17.2,"YES","YES",2984266,1978210,3990322,0
+"FINAL",1997,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",16.5,"YES","YES",2486174,1682146,3290203,0
+"FINAL",1998,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",20.1,"YES","YES",454691,275561,633821,0
+"FINAL",1999,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",19.4,"YES","YES",369693,229121,510266,0
+"FINAL",2000,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13.5,"YES","YES",1338506,984337,1692674,0
+"FINAL",2001,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",21.9,"YES","YES",2029766,1158509,2901023,0
+"FINAL",2002,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13,"YES","YES",1412118,1052310,1771926,0
+"FINAL",2003,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",12.2,"YES","YES",1545076,1175617,1914534,0
+"FINAL",2004,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",18.5,"YES","YES",819599,522412,1116785,0
+"FINAL",2005,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",16.9,"YES","YES",748493,500562,996424,0
+"FINAL",2006,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",18.7,"YES","YES",763033,483366,1042700,0
+"FINAL",2007,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",12.3,"YES","YES",949251,720406,1178097,0
+"FINAL",2008,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",20.7,"YES","YES",925163,549806,1300521,0
+"FINAL",2009,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",16.2,"YES","YES",1316200,898280,1734119,0
+"FINAL",2010,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",21,"YES","YES",1303822,767169,1840475,0
+"FINAL",2011,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",19.2,"YES","YES",501751,312932,690570,0
+"FINAL",2012,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",15.6,"YES","YES",969793,673269,1266317,0
+"FINAL",2013,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",21,"YES","YES",1059736,623549,1495924,0
+"FINAL",2014,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",18.5,"YES","YES",1281237,816661,1745814,0
+"FINAL",2015,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",17.6,"YES","YES",1960533,1284227,2636838,0
+"FINAL",2016,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13.7,"YES","YES",2328153,1702997,2953309,0
+"FINAL",2017,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",16.8,"YES","YES",2173583,1457865,2889300,0
+"FINAL",2018,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",11.7,"YES","YES",1407762,1084934,1730590,0
+"FINAL",2019,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",10.2,"YES","YES",1564275,1251546,1877005,0
+"FINAL",2020,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",11,"YES","YES",1801060,1412752,2189369,0
+"FINAL",2021,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",10.1,"YES","YES",2300328,1844955,2755702,0
+"FINAL",2022,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",12.9,"YES","YES",1940164,1449613,2430716,0
+"FINAL",2023,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",12.1,"YES","YES",1938917,1479084,2398751,0
+"FINAL",2024,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",10.8,"YES","YES",1353425,1066932,1639918,0
+"FINAL",2025,"CALENDAR YEAR (JAN 1 - DEC 31)","BLACK SEA BASS","ANNUAL",13,"YES","YES",2079394,1549565,2609224,0
+

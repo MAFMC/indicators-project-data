@@ -51,3 +51,6 @@ rsconnect/
 
 # Mac stuff
 .DS_Store
+
+# zip files of raw data
+data-raw/MRIP/ignore_zips/

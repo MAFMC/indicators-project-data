@@ -1,0 +1,93 @@
+ï»¿Marine Recreational Information Program Query Results
+
+Your Query Parameters:
+
+·Query: MRIP CATCH TIME SERIES
+
+·Year: 1981 - 2025
+
+·Summary:ANNUAL
+
+·Fishing Year: CALENDAR YEAR (JANUARY 1 - DECEMBER 31)
+
+·Geographic Area: MID-ATLANTIC
+
+·Species: BLUEFISH
+
+·Fishing Mode: ALL MODES COMBINED
+
+·Fishing Area: ALL AREAS COMBINED
+
+·Type of Catch: HARVEST (TYPE A + B1)
+
+Information:
+
+·WEIGHT OF FISH (KILOGRAMS)
+
+MRIP does not support the use of estimates with a percent standard error above 50 and in those instances, recommends considering higher levels of aggregation (e.g., across states, geographic regions, or fishing modes).
+
+Estimates (excluding for-hire mode estimates from the For-Hire Survey) from 1981-2025 are calibrated to reflect the 2026 Improved Fishing Effort Survey (FES) design.
+
+As of 2026 wave 1, all estimates of shore and private/rental boat fishing effort and catch are now based on the 2026 Improved Fishing Effort Survey (FES) design.
+
+MRIP estimates for Louisiana are not available after 2013. State produced estimates are available through the MRIP National Query. For more information on state run surveys and estimates, please click <a href='http://www.wlf.louisiana.gov/lacreel' target='_blank'>here</a>.
+
+Estimates for Puerto Rico have not been calibrated and those prior to 2014 are based on Marine Recreational Fisheries Statistics Survey methodology.
+
+'             
+
+As part of the government's guidelines for statistical programs, the Office of Management and Budget requires federal agencies to establish their own criteria for statistical precision (Standard 4.1.5 in OMB Standards and Guidelines for Statistical Surveys)
+
+Upper and lower confidence limits are calculated using a standard 95% confidence interval. The lower 95% confidence interval is truncated at 0 to match graph output.
+
+<a href='https://www.fisheries.noaa.gov/recreational-fishing-data/recreational-fishing-data-glossary#percent-standard-error-(pse)' target='_blank'><b>PSE</b></a>, or percent standard error, is automatically included in all outputs. The higher an estimate's Percent Standard Error, or PSE, the larger the margin of error around the estimate, which means there is more uncertainty in the estimate.
+
+Estimates with a percent standard error exceeding 50 are not statistically different from zero using a standard 95% confidence interval.  Note this significance comparison is not suggesting these estimates all equal zero, but is rather intended to illustrate their high uncertainty.
+
+"Estimate Status","Year","Fishing Year","Common Name","Cumulative Through","PSE Harvest (A+B1) Total Weight (kg)","Does Harvest (A+B1) Total Weight (kg) Meet MRIP Standard","Is Harvest (A+B1) Total Weight (kg) Significantly Different From 0","Harvest (A+B1) Total Weight (kg)","Harvest (A+B1) Total Weight (kg) Lower 95% Confidence Limit","Harvest (A+B1) Total Weight (kg) Upper 95% Confidence Limit","Landings (no.) without Size Information"
+"FINAL",1981,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.3,"YES","YES",34223591,24631403,43815779,0
+"FINAL",1982,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.6,"YES","YES",28604765,19858572,37350958,0
+"FINAL",1983,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.2,"YES","YES",32211370,22614959,41807781,0
+"FINAL",1984,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.9,"YES","YES",21445076,13921285,28968866,0
+"FINAL",1985,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.9,"YES","YES",20592733,14578831,26606635,0
+"FINAL",1986,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.3,"YES","YES",29241757,19326462,39157052,0
+"FINAL",1987,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",10.4,"YES","YES",31061126,24729627,37392627,0
+"FINAL",1988,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.7,"YES","YES",13979692,10499867,17459517,0
+"FINAL",1989,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.3,"YES","YES",15250319,10677054,19823585,0
+"FINAL",1990,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",10.4,"YES","YES",10832534,8624430,13040638,0
+"FINAL",1991,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",11.6,"YES","YES",10626982,8210832,13043133,0
+"FINAL",1992,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",9,"YES","YES",7203117,5932487,8473746,0
+"FINAL",1993,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",11.5,"YES","YES",4682021,3626694,5737349,0
+"FINAL",1994,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.4,"YES","YES",3596590,2581488,4611691,0
+"FINAL",1995,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.6,"YES","YES",4266276,3045439,5487114,0
+"FINAL",1996,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.9,"YES","YES",4107550,2827473,5387627,0
+"FINAL",1997,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.7,"YES","YES",3231220,2426905,4035535,0
+"FINAL",1998,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.8,"YES","YES",5371371,3497407,7245335,0
+"FINAL",1999,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13.4,"YES","YES",3999085,2948765,5049405,0
+"FINAL",2000,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.4,"YES","YES",3519582,2319264,4719901,0
+"FINAL",2001,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.5,"YES","YES",5200063,3926047,6474078,0
+"FINAL",2002,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.9,"YES","YES",3481261,2601059,4361464,0
+"FINAL",2003,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",8.8,"YES","YES",4477645,3705341,5249949,0
+"FINAL",2004,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",10.5,"YES","YES",5797275,4604196,6990354,0
+"FINAL",2005,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.4,"YES","YES",6730139,4698714,8761564,0
+"FINAL",2006,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.3,"YES","YES",4771541,3621218,5921865,0
+"FINAL",2007,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.2,"YES","YES",7221124,5211341,9230908,0
+"FINAL",2008,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",9.4,"YES","YES",5948957,4852921,7044993,0
+"FINAL",2009,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",11.5,"YES","YES",6038400,4677345,7399455,0
+"FINAL",2010,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13,"YES","YES",5507308,4104046,6910571,0
+"FINAL",2011,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",11.9,"YES","YES",4566973,3501772,5632174,0
+"FINAL",2012,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.1,"YES","YES",4646694,3544684,5748704,0
+"FINAL",2013,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13,"YES","YES",4830215,3599476,6060954,0
+"FINAL",2014,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",14.8,"YES","YES",4031557,2862083,5201031,0
+"FINAL",2015,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",12.4,"YES","YES",4940889,3740056,6141723,0
+"FINAL",2016,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.6,"YES","YES",5418376,3549253,7287498,0
+"FINAL",2017,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",16.6,"YES","YES",5681970,3833284,7530655,0
+"FINAL",2018,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",15.2,"YES","YES",1767835,1241161,2294508,0
+"FINAL",2019,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13.4,"YES","YES",2386539,1759738,3013339,0
+"FINAL",2020,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13.5,"YES","YES",1418315,1043029,1793601,0
+"FINAL",2021,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",16.9,"YES","YES",2336968,1562871,3111065,0
+"FINAL",2022,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",23.8,"YES","YES",1830323,976514,2684132,0
+"FINAL",2023,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",17.6,"YES","YES",2081063,1363179,2798946,0
+"FINAL",2024,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",18.3,"YES","YES",2242440,1438121,3046758,0
+"FINAL",2025,"CALENDAR YEAR (JAN 1 - DEC 31)","BLUEFISH","ANNUAL",13.7,"YES","YES",964042,705177,1222907,0
+
