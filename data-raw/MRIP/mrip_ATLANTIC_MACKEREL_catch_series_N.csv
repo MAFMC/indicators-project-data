@@ -1,0 +1,93 @@
+ï»¿Marine Recreational Information Program Query Results
+
+Your Query Parameters:
+
+·Query: MRIP CATCH TIME SERIES
+
+·Year: 1981 - 2025
+
+·Summary:ANNUAL
+
+·Fishing Year: CALENDAR YEAR (JANUARY 1 - DECEMBER 31)
+
+·Geographic Area: MID-ATLANTIC
+
+·Species: ATLANTIC MACKEREL
+
+·Fishing Mode: ALL MODES COMBINED
+
+·Fishing Area: ALL AREAS COMBINED
+
+·Type of Catch: ALL CATCH TYPES (TYPE A, B1, and B2)
+
+Information:
+
+·NUMBERS OF FISH
+
+MRIP does not support the use of estimates with a percent standard error above 50 and in those instances, recommends considering higher levels of aggregation (e.g., across states, geographic regions, or fishing modes).
+
+Estimates (excluding for-hire mode estimates from the For-Hire Survey) from 1981-2025 are calibrated to reflect the 2026 Improved Fishing Effort Survey (FES) design.
+
+As of 2026 wave 1, all estimates of shore and private/rental boat fishing effort and catch are now based on the 2026 Improved Fishing Effort Survey (FES) design.
+
+MRIP estimates for Louisiana are not available after 2013. State produced estimates are available through the MRIP National Query. For more information on state run surveys and estimates, please click <a href='http://www.wlf.louisiana.gov/lacreel' target='_blank'>here</a>.
+
+Estimates for Puerto Rico have not been calibrated and those prior to 2014 are based on Marine Recreational Fisheries Statistics Survey methodology.
+
+'             
+
+As part of the government's guidelines for statistical programs, the Office of Management and Budget requires federal agencies to establish their own criteria for statistical precision (Standard 4.1.5 in OMB Standards and Guidelines for Statistical Surveys)
+
+Upper and lower confidence limits are calculated using a standard 95% confidence interval. The lower 95% confidence interval is truncated at 0 to match graph output.
+
+<a href='https://www.fisheries.noaa.gov/recreational-fishing-data/recreational-fishing-data-glossary#percent-standard-error-(pse)' target='_blank'><b>PSE</b></a>, or percent standard error, is automatically included in all outputs. The higher an estimate's Percent Standard Error, or PSE, the larger the margin of error around the estimate, which means there is more uncertainty in the estimate.
+
+Estimates with a percent standard error exceeding 50 are not statistically different from zero using a standard 95% confidence interval.  Note this significance comparison is not suggesting these estimates all equal zero, but is rather intended to illustrate their high uncertainty.
+
+"Estimate Status","Year","Fishing Year","Common Name","Cumulative Through","PSE Observed Harvest (A)","Does Observed Harvest (A) Meet MRIP Standard","Is Observed Harvest (A) Significantly Different From 0","Observed Harvest (A)","Observed Harvest (A) Lower 95% Confidence Limit","Observed Harvest (A) Upper 95% Confidence Limit","PSE Reported Harvest (B1)","Does Reported Harvest (B1) Meet MRIP Standard","Is Reported Harvest (B1) Significantly Different From 0","Reported Harvest (B1)","Reported Harvest (B1) Lower 95% Confidence Limit","Reported Harvest (B1) Upper 95% Confidence Limit","PSE Released Alive (B2)","Does Released Alive (B2) Meet MRIP Standard","Is Released Alive (B2) Significantly Different From 0","Released Alive (B2)","Released Alive (B2) Lower 95% Confidence Limit","Released Alive (B2) Upper 95% Confidence Limit"
+"FINAL",1981,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",43,"CAUTION","YES",975115,153288,1796942,56.4,"NO","NO",354445,0,746263,88.2,"NO","NO",107487,0,293301
+"FINAL",1982,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",55.5,"NO","NO",616105,0,1286304,77,"NO","NO",190583,0,478211,".",,,".",".","."
+"FINAL",1983,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",34.9,"CAUTION","YES",2537373,801709,4273038,32.2,"CAUTION","YES",108153,39895,176410,".",,,".",".","."
+"FINAL",1984,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",57.4,"NO","NO",480104,0,1020240,31.6,"CAUTION","YES",215379,81982,348776,56.5,"NO","NO",49824,0,105000
+"FINAL",1985,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",27.5,"YES","YES",1999938,921971,3077905,89,"NO","NO",67439,0,185081,29.4,"YES","YES",438094,185647,690542
+"FINAL",1986,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",48.2,"CAUTION","YES",2947968,162964,5732973,63.4,"NO","NO",484351,0,1086226,65.2,"NO","NO",48439,0,110340
+"FINAL",1987,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",27.6,"YES","YES",2702039,1240344,4163734,53.7,"NO","NO",2301779,0,4724447,80.8,"NO","NO",422831,0,1092461
+"FINAL",1988,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",56.5,"NO","NO",427964,0,901891,52,"NO","NO",404967,0,817710,57.6,"NO","NO",722653,0,1538500
+"FINAL",1989,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",38.9,"CAUTION","YES",640747,152216,1129278,49.9,"CAUTION","YES",217859,4784,430934,53.6,"NO","NO",14950,0,30656
+"FINAL",1990,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",42.1,"CAUTION","YES",509522,89085,929960,51.8,"NO","NO",437011,0,880699,56.3,"NO","NO",95207,0,200266
+"FINAL",1991,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",32.1,"CAUTION","YES",831854,308485,1355224,37,"CAUTION","YES",483643,132905,834381,35.9,"CAUTION","YES",99444,29471,169416
+"FINAL",1992,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",44.6,"CAUTION","YES",81860,10301,153419,87.7,"NO","NO",131926,0,358697,81,"NO","NO",78141,0,202198
+"FINAL",1993,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",96.4,"NO","NO",16720,0,48312,71.8,"NO","NO",70312,0,169261,71.4,"NO","NO",2922,0,7011
+"FINAL",1994,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",49,"CAUTION","YES",85808,3398,168219,93.5,"NO","NO",47311,0,134012,66.1,"NO","NO",26899,0,61748
+"FINAL",1995,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",66.4,"NO","NO",132424,0,304767,68.8,"NO","NO",89080,0,209204,77.3,"NO","NO",4938,0,12420
+"FINAL",1996,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",42.8,"CAUTION","YES",177857,28656,327058,36.4,"CAUTION","YES",84964,24347,145580,39.2,"CAUTION","YES",35036,8117,61955
+"FINAL",1997,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",36.8,"CAUTION","YES",843598,235128,1452068,51.9,"NO","NO",371951,0,750315,38.2,"CAUTION","YES",274542,68987,480096
+"FINAL",1998,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",60,"NO","NO",188044,0,409183,72.4,"NO","NO",235846,0,570521,76.8,"NO","NO",321,0,803
+"FINAL",1999,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",45.1,"CAUTION","YES",47160,5473,88848,82.9,"NO","NO",127515,0,334707,88.5,"NO","NO",14286,0,39066
+"FINAL",2000,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",43.5,"CAUTION","YES",30686,4523,56849,67.3,"NO","NO",39081,0,90632,53.1,"NO","NO",11458,0,23382
+"FINAL",2001,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",65.4,"NO","NO",44196,0,100848,57,"NO","NO",229599,0,486107,76.8,"NO","NO",14772,0,37008
+"FINAL",2002,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",78.2,"NO","NO",25766,0,65257,86,"NO","NO",220042,0,590945,79,"NO","NO",48843,0,124471
+"FINAL",2003,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",83.4,"NO","NO",27471,0,72376,54.3,"NO","NO",31102,0,64203,96.6,"NO","NO",1682,0,4865
+"FINAL",2004,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",27.6,"YES","YES",5922,2718,9125,56,"NO","NO",7194,0,15091,36.8,"CAUTION","YES",415,116,715
+"FINAL",2005,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",61.3,"NO","NO",167912,0,369654,97.8,"NO","NO",10373,0,30256,91.9,"NO","NO",32687,0,91564
+"FINAL",2006,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",39.9,"CAUTION","YES",978,213,1742,35.2,"CAUTION","YES",130,40,220,44.8,"CAUTION","YES",174,21,326
+"FINAL",2007,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",".",,,".",".",".",".",,,".",".",".",95,"NO","NO",4062,0,11626
+"FINAL",2008,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",".",,,".",".",".",68.6,"NO","NO",14078,0,33006,96.2,"NO","NO",2438,0,7034
+"FINAL",2009,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",".",,,".",".",".",100.7,"NO","NO",9349,0,27803,91.7,"NO","NO",1955,0,5468
+"FINAL",2010,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",19.3,"YES","YES",63,39,87,".",,,".",".",".",".",,,".",".","."
+"FINAL",2011,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",102.3,"NO","NO",27,0,83,102.3,"NO","NO",550,0,1652,83.2,"NO","NO",9,0,23
+"FINAL",2012,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",".",,,".",".",".",100.9,"NO","NO",6005,0,17881,59.2,"NO","NO",169,0,364
+"FINAL",2013,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",88.1,"NO","NO",772,0,2104,".",,,".",".",".",79,"NO","NO",1805,0,4599
+"FINAL",2014,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",87.6,"NO","NO",8836,0,24006,69.8,"NO","NO",2874,0,6807,77.4,"NO","NO",31429,0,79108
+"FINAL",2015,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",56.2,"NO","NO",1569,0,3297,97.4,"NO","NO",2252,0,6551,75.8,"NO","NO",8609,0,21398
+"FINAL",2016,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",94.9,"NO","NO",835,0,2390,101.1,"NO","NO",1801,0,5369,101,"NO","NO",5407,0,16112
+"FINAL",2017,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",87.8,"NO","NO",178202,0,484865,50.2,"NO","NO",80530,1295,159765,93,"NO","NO",14950,0,42202
+"FINAL",2018,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",54,"NO","NO",4142,0,8526,53.6,"NO","NO",26175,0,53674,80.5,"NO","NO",2485,0,6405
+"FINAL",2019,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",50.7,"NO","NO",1669,11,3328,104.2,"NO","NO",2163,0,6580,44.5,"CAUTION","YES",21819,2789,40849
+"FINAL",2020,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",88.9,"NO","NO",33571,0,92066,56.1,"NO","NO",5257,0,11037,59.7,"NO","NO",6359,0,13800
+"FINAL",2021,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",73.1,"NO","NO",1788,0,4350,88.9,"NO","NO",336,0,922,68.1,"NO","NO",4851,0,11326
+"FINAL",2022,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",58.1,"NO","NO",155693,0,332991,59.4,"NO","NO",2078,0,4497,54,"NO","NO",21484,0,44222
+"FINAL",2023,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",49.1,"CAUTION","YES",5956,224,11689,88,"NO","NO",1537,0,4187,61.2,"NO","NO",6120,0,13462
+"FINAL",2024,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",75.8,"NO","NO",34603,0,86011,94.5,"NO","NO",18780,0,53565,70,"NO","NO",26046,0,61781
+"FINAL",2025,"CALENDAR YEAR (JAN 1 - DEC 31)","ATLANTIC MACKEREL","ANNUAL",".",,,".",".",".",".",,,".",".",".",52.5,"NO","NO",5427,0,11012
+

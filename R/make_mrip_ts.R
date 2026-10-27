@@ -1,11 +1,25 @@
 #' Create MRIP time series of catch
 #'
 #' Use `read_mrip_csv` to bring in species datasets, then combine them
-#' into something sensible
+#' into something sensible and put in the data folder
 #'
-#'@param path Path to csv file output from MRIP query tool
-#'@param header_pattern Optional; first line of data names, e.g. "^Estimate"
-#'@param n_meta Optional; integer number of lines prior to the first line of data
+#'@param file_path list of filenames to be read in
+#'
+#'@returns a dataframe with columns
+#'\itemize{
+#'  \item{\code{species}, common name from MRIP}
+#'  \item{\code{year}, year}
+#'  \item{\code{area}, geographic area}
+#'  \item{\code{var}, variable}
+#'  \item{\code{value}, value of the variable}
+#'  \item{\code{units}, units of the variable}
+#'
+#'@
+#'
+#'@examples
+#'  obj <- read_mrip_csv(here::here("mrip_bluefish.csv"))
+#'
+#'@export
 
 
 
