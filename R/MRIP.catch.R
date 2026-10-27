@@ -2,7 +2,7 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
    endyr=NULL,dom=NULL){
     # Gary Nelson, Massachusetts Division of Marine Fisheries
     # gary.nelson@mass.gov
-    #07_22_2022 - G Nelson coded method to extract the domain labels for better output  
+    #07_22_2022 - G Nelson coded method to extract the domain labels for better output
     if(is.null(intdir)) stop("Need main directory location of intercept files.")
     if(is.null(st)) stop("No state code was specified.")
     if(is.null(styr)) stop("Starting year is missing.")
@@ -16,7 +16,7 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
         din<-ifelse(substr(intdir,nchar(intdir),nchar(intdir)) %in% c("\\"),
           c(paste(intdir,"int",sep="")),c(paste(intdir,"\\int",sep="")))
      }
-  
+
   if(!is.null(common)) common<-tolower(common)
   st<-as.character(st)
   styr<-as.character(styr)
@@ -30,22 +30,22 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
    if(!is.null(ncol(input1))){
    n.input1 <- ncol(input1)
    n.input2 <- ncol(input2)
-   
+
    if (n.input2 < n.input1) {
-     TF.names <- which(names(input2) %in% names(input1))         
+     TF.names <- which(names(input2) %in% names(input1))
      column.names <- names(input2[, TF.names])
-     } 
+     }
    else {TF.names <- which(names(input1) %in% names(input2))
      column.names <- names(input1[, TF.names])}
    return(rbind(input1[, column.names], input2[, column.names]))
   }
     if(is.null(ncol(input1))) return(rbind(input1,input2))
- }   
+ }
 
 	for(yr in styr:endyr){
- 	   for (j in 1:as.numeric(length(wave))){ 
+ 	   for (j in 1:as.numeric(length(wave))){
              #Get catch
-      	     wv<-wave[j] 
+      	     wv<-wave[j]
              t3<-read.csv(paste(din,yr,"/","catch_",yr,wv,".csv",sep=""),
                colClasses=c("character"),na.strings=".")
                t3<-t3[t3$ST %in% c(st),]
@@ -87,21 +87,21 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
           colpos<-which(names(dataset)==names(dom[l]))
            sublev<-length(dom[[l]])
         k<-1
-         for (k in 1:sublev){  
-         dataset[,ncol(dataset)]<-ifelse(dataset[,colpos] %in% c(as.character(dom[[l]][[k]])),c(paste(names(dom)[l],k,sep="")),dataset[,ncol(dataset)])  
-         }   
-           dom_ids<-c(dom_ids,names(dom[l]))   
+         for (k in 1:sublev){
+         dataset[,ncol(dataset)]<-ifelse(dataset[,colpos] %in% c(as.character(dom[[l]][[k]])),c(paste(names(dom)[l],k,sep="")),dataset[,ncol(dataset)])
+         }
+           dom_ids<-c(dom_ids,names(dom[l]))
       }
     }
     test<-c("year","wave","st","sub_reg","mode_fx","area_x")
     for(gg in 1:as.numeric(length(dom_ids))){
-      if(!any(dom_ids[gg]==test)) test[as.numeric(length(test)+1)]<-c(paste(dom_ids[gg],"1",sep="")) 
+      if(!any(dom_ids[gg]==test)) test[as.numeric(length(test)+1)]<-c(paste(dom_ids[gg],"1",sep=""))
       if(any(dom_ids[gg]==test)){
         colpos<-which(test==dom_ids[gg])
         test[colpos]<-c(paste(dom_ids[gg],"1",sep=""))
       }
     }
-   
+
     ## add Non-domain names to values in columns
       for(gg in 1:as.numeric(length(test))){
         if(substr(test[gg],nchar(test[gg]),nchar(test[gg]))!="1"){
@@ -109,13 +109,13 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
         }
       }
    for(hh in 1:as.numeric(length(test))){
-     if(hh==1) texter<-paste("dataset$",test[hh],sep="") 
-     if(hh>1) texter<-paste(texter,",","dataset$",test[hh],sep="")  
+     if(hh==1) texter<-paste("dataset$",test[hh],sep="")
+     if(hh>1) texter<-paste(texter,",","dataset$",test[hh],sep="")
    }
      eval(parse(text=paste("dataset$dom_id<-c(paste(",texter,",sep=''))",sep="")))
      tempdom<-as.character(texter)
-  }# dom>0 
- 
+  }# dom>0
+
   if(length(dom)==0){
    dataset$year<-c(paste("year",dataset$year,sep=""))
    dataset$wave<-c(paste("wave",dataset$wave,sep=""))
@@ -134,7 +134,7 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
   dataset$release<-as.numeric(dataset$release)
   dataset$wgt_ab1<-as.numeric(dataset$wgt_ab1)
   dataset$wp_int<-as.numeric(dataset$wp_int)
-  
+
   if(!is.null(common)){
   dataset$dcomm<-common
   dataset$dtotcat<-ifelse(dataset$common==common,dataset$tot_cat,0)
@@ -149,11 +149,11 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
      ,list(dataset$strat_id,dataset$psu_id,dataset$id_code,dataset$wp_int,dataset$dom_id),sum)
   names(dataset1)<-c("strat_id","psu_id","id_code","wp_int","dom_id","total.catch",
     "harvest.A.B1","claim.A","reported.B1","released.B2","weight")
-   dfpc<-svydesign(ids=~psu_id,strata=~strat_id,
+   dfpc<-survey::svydesign(ids=~psu_id,strata=~strat_id,
    weights=~wp_int,nest=TRUE,data=dataset1)
    options(survey.lonely.psu = "certainty")
-   results<-svyby(~total.catch+harvest.A.B1+claim.A+reported.B1+released.B2+weight,
-     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE) 
+   results<-survey::svyby(~total.catch+harvest.A.B1+claim.A+reported.B1+released.B2+weight,
+     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE)
    names(results)<-c("Domain","total.catch","harvest.A.B1","claim.A",
       "reported.B1","released.B2","weight","SE.total.catch","SE.harvest.A.B1",
       "SE.claim.A","SE.reported.B1","SE.released.B2","SE.weight","PSE.total.catch",
@@ -165,11 +165,11 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
   }
   if(is.null(common)){
     dataset$dom_id<-c(paste(dataset$dom_id,dataset$common,sep=""))
-    dfpc<-svydesign(ids=~psu_id,strata=~strat_id,
+    dfpc<-survey::svydesign(ids=~psu_id,strata=~strat_id,
     weights=~wp_int,nest=TRUE,data=dataset)
     options(survey.lonely.psu = "certainty")
-    results<-svyby(~tot_cat+landing+claim+harvest+release+wgt_ab1,
-     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE) 
+    results<-survey::svyby(~tot_cat+landing+claim+harvest+release+wgt_ab1,
+     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE)
     names(results)<-c("Domain","total.catch","harvest.A.B1","claim.A",
       "reported.B1","released.B2","weight","SE.total.catch","SE.harvest.A.B1",
       "SE.claim.A","SE.reported.B1","SE.released.B2","SE.weight","PSE.total.catch",
@@ -180,8 +180,8 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
     results<-results[order(results$Domain),]
   }
 
-  
-if(nrow(results)>0){  
+
+if(nrow(results)>0){
 #Make more palatable Domain labels
  tempdom<-gsub("([0-9]+).*$", "",unlist(strsplit(gsub('dataset$', '', tempdom,fixed=TRUE),",")))
  for(i in 1:length(tempdom)){
@@ -194,7 +194,7 @@ if(nrow(results)>0){
  }
  for(i in 1:c(length(tempdom)-1)) eval(parse(text=paste(tempdom[i],"_value<-substr(results$Domain,start=attributes(",tempdom[i],
                        "_first_pos)$match.length+",tempdom[i],"_first_pos,stop=",tempdom[i+1],"_first_pos-1)",sep="")))
- 
+
  #last element
  foo<-gregexpr("([[:digit:]]+)",results$Domain)
  start_positions<-NULL
