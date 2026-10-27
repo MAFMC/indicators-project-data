@@ -1,5 +1,5 @@
-Package: indicators-project-data
-Title: What the Package Does (One Line, Title Case)
+Package: IndicatorsProjectData
+Title: Utilities For Indicator Building and Testing 
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))

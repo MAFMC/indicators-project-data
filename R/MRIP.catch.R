@@ -1,3 +1,6 @@
+#' MRIP distributed catch estimation function
+#' @export
+
 MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
    endyr=NULL,dom=NULL){
     # Gary Nelson, Massachusetts Division of Marine Fisheries
@@ -153,7 +156,7 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
    weights=~wp_int,nest=TRUE,data=dataset1)
    options(survey.lonely.psu = "certainty")
    results<-survey::svyby(~total.catch+harvest.A.B1+claim.A+reported.B1+released.B2+weight,
-     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE)
+     ~dom_id,dfpc,survey::svytotal,vartype=c("se","cv"),keep.names=FALSE)
    names(results)<-c("Domain","total.catch","harvest.A.B1","claim.A",
       "reported.B1","released.B2","weight","SE.total.catch","SE.harvest.A.B1",
       "SE.claim.A","SE.reported.B1","SE.released.B2","SE.weight","PSE.total.catch",
@@ -169,7 +172,7 @@ MRIP.catch<-function(intdir=NULL,common=NULL, st=NULL,styr=NULL,
     weights=~wp_int,nest=TRUE,data=dataset)
     options(survey.lonely.psu = "certainty")
     results<-survey::svyby(~tot_cat+landing+claim+harvest+release+wgt_ab1,
-     ~dom_id,dfpc,svytotal,vartype=c("se","cv"),keep.names=FALSE)
+     ~dom_id,dfpc,survey::svytotal,vartype=c("se","cv"),keep.names=FALSE)
     names(results)<-c("Domain","total.catch","harvest.A.B1","claim.A",
       "reported.B1","released.B2","weight","SE.total.catch","SE.harvest.A.B1",
       "SE.claim.A","SE.reported.B1","SE.released.B2","SE.weight","PSE.total.catch",

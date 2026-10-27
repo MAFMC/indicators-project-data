@@ -22,14 +22,14 @@
 #'@export
 
 
-
-
-scuprec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SCUP_catch_series.csv"))
-
-bsbrec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_BLACK_SEA_BASS_catch_series.csv"))
-
-flukerec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SUMMER_FLOUNDER_catch_series.csv"))
-
-bluerec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_BLUEFISH_catch_series.csv"))
-
-mackrec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_ATLANTIC_MACKEREL_catch_series.csv"))
+#
+#
+# scuprec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SCUP_catch_series.csv"))
+#
+# bsbrec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_BLACK_SEA_BASS_catch_series.csv"))
+#
+# flukerec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SUMMER_FLOUNDER_catch_series.csv"))
+#
+# bluerec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_BLUEFISH_catch_series.csv"))
+#
+# mackrec <- read_mrip_csv(here::here("data-raw/MRIP/mrip_ATLANTIC_MACKEREL_catch_series.csv"))
