@@ -1,8 +1,33 @@
-# Read in the MRIP data downloaded from their website query tool
+#' Read in MRIP data downloaded from their website query tool
+#'
+#' Keep the metadata along with the downloaded estimates in a list object. Guess
+#' the start of the data or tell it the first data name or row number.
+#'
+#'@param path Path to csv file output from MRIP query tool
+#'@param header_pattern Optional; first line of data names, e.g. "^Estimate"
+#'@param n_meta Optional; integer number of lines prior to the first line of data
+#'
+#'@return a list
+#'\itemize{
+#'  \item{\code{data}, tibble of values named exactly as in MIRP output}
+#'  \item{\code{title}, name of dataset (first line of csv file)}
+#'  \item{\code{params}, selections used in the web query}
+#'  \item{\code{measure}, units for results}
+#'  \item{\code{notes}, long form notes accompanying the download}
+#'  \item{\code{meta_raw}, all metadata above the table in raw form}
+#'  \item{\code{source}, where is the file located}
+#' }
+#'
+#'@examples
+#'  obj <- read_mrip_csv(here::here("mrip_bluefish.csv"))
+#'  obj$data      # tibble of the actual estimates
+#'  obj$params    # Query, Year, Summary, Fishing Year, Geographic Area, Species, ...
+#'  obj$measure   # "WEIGHT OF FISH (KILOGRAMS)"
+#'  obj$notes     # character vector of the caveats (PSE, calibration, etc.)
+#'
+#'@export
 
-# test <- readr::read_csv(here::here("data-raw/MRIP/test"))
-
-# Code draft from Claude Sonnet 5.5, merged and corrected by Sarah G
+# Code drafts from Claude Sonnet 5.5, merged and corrected by Sarah G
 
 read_mrip_csv <- function(path, header_pattern = NULL, n_meta = NULL) {
   lines <- readr::read_lines(path)
@@ -98,5 +123,5 @@ print.mrip_csv <- function(x, ...) {
 
 # path <- here::here("data-raw/MRIP/mrip_BLUEFISH_catch_series.csv")
 
-#test <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SCUP_catch_series.csv"))
+# test <- read_mrip_csv(here::here("data-raw/MRIP/mrip_SCUP_catch_series.csv"))
 
