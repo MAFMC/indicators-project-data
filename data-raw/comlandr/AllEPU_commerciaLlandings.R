@@ -55,20 +55,25 @@ full.areas <- c(539, 600, 612:616, 621, 622, 625, 626, 631, 632)
 landings <- comland$comland[AREA %in% full.areas, ]
 
 # Try without this proportioning first
+# Try with
 
 # #Areas 526 and 537 straddle Georges Bank.  The proprotion of catch inside
 # #and outside was calculated from the MS Keyrun project for Georges Bank.  We will use
 # #the proportion outside of Georges Bank for those Stat Areas.  The rest will be
 # #100% MAB
-# proportions <- readRDS(here('data/All_Species_Proportions.rds'))
-# proportions <- proportions[AREA %in% c(526, 537) & InOut == 'out', ]
-#
-# mab.split.land <- aggregate_area(comland$comland, proportions, areaDescription = 'InOut',
-#                                  propDescription = 'MeanProp')
-# mab.split.land[, InOut := NULL]
-#
-# #Merge split landings with other landings
-# landings <- rbindlist(list(landings, mab.split.land), use.names = T)
+load(here::here('data-raw/comlandr/AllSpeciesProportions.rda'))
+proportions <- AllSpeciesProportions
+proportions <- proportions[AREA %in% c(526, 537) & InOut == 'out', ]
+
+mab.split.land <- comlandr:::aggregate_area(comland, proportions, areaDescription = 'InOut',
+                                            useForeign = F, applyProp = T,
+                                 propDescription = 'MeanProp')
+
+mab.split.land$comland[, InOut := NULL]
+mab.split.land$comland[, AREA := 526537]
+
+#Merge split landings with other landings
+landings <- rbindlist(list(landings, mab.split.land$comland), use.names = T)
 
 #Assign gears to fleets
 #Generate NEGEAR2 codes from NEGEAR
