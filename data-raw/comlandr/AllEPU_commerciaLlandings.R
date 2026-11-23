@@ -61,19 +61,19 @@ landings <- comland$comland[AREA %in% full.areas, ]
 # #and outside was calculated from the MS Keyrun project for Georges Bank.  We will use
 # #the proportion outside of Georges Bank for those Stat Areas.  The rest will be
 # #100% MAB
-# load(here::here('data-raw/comlandr/AllSpeciesProportions.rda'))
-# proportions <- AllSpeciesProportions
-# proportions <- proportions[AREA %in% c(526, 537) & InOut == 'out', ]
-#
-# mab.split.land <- comlandr:::aggregate_area(comland, proportions, areaDescription = 'InOut',
-#                                             useForeign = F, applyProp = T,
-#                                  propDescription = 'MeanProp')
-#
-# mab.split.land$comland[, InOut := NULL]
-# mab.split.land$comland[, AREA := 526537]
-#
-# #Merge split landings with other landings
-# landings <- rbindlist(list(landings, mab.split.land$comland), use.names = T)
+load(here::here('data-raw/comlandr/AllSpeciesProportions.rda'))
+proportions <- AllSpeciesProportions
+proportions <- proportions[AREA %in% c(526, 537) & InOut == 'out', ]
+
+mab.split.land <- comlandr:::aggregate_area(comland, proportions, areaDescription = 'InOut',
+                                            useForeign = T, applyProp = T,
+                                 propDescription = 'MeanProp')
+
+mab.split.land$comland[, InOut := NULL]
+mab.split.land$comland[, AREA := 526537]
+
+#Merge split landings with other landings
+landings <- rbindlist(list(landings, mab.split.land$comland), use.names = T)
 
 #Assign gears to fleets
 #Generate NEGEAR2 codes from NEGEAR
