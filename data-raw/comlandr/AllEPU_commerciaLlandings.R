@@ -1,4 +1,5 @@
-# Pull commercial landings for all 3 Rpath models, July 2024
+# Pull commercial landings for all 3 Rpath models, November 2026
+# Modified from July 2024 script
 #
 # original file was MAB only, modified to do all 3
 # original file was base years, this gets full time series
@@ -33,7 +34,7 @@ path.yrs <- 1980:1985
 
 #comland <- comlandr::get_comland_data(channel, filterByYear = path.yrs, useForeign = F)
 
-##call
+##call for 2026 done offline
 #comlandr::get_comland_data(channel = channel, filterByYear = NA,
 # filterByArea = NA, useLanded = TRUE, removeParts = TRUE,
 # useHerringMaine = TRUE, useForeign = TRUE, refYear = NA,
@@ -44,7 +45,7 @@ path.yrs <- 1980:1985
 # unkVar = c("MONTH", "NEGEAR", "AREA"), knStrata = c("HY",
 #                                                     "QY", "MONTH", "NEGEAR", "TONCL2", "AREA"))
 
-comland <- readRDS("~/Documents/Work/MAFMCindicators/Code/indicators-project-data/data-raw/comlandr/ignore_rawpull/sarah.rds")
+comland <- readRDS(here::here("data-raw/comlandr/ignore_rawpull/sarah.rds"))
 
 #Assigned area to MAB
 #Will be using NAFO Stat Areas - 526, 537, 539, 600, 612 - 616, 621, 622, 625,
@@ -54,26 +55,37 @@ full.areas <- c(539, 600, 612:616, 621, 622, 625, 626, 631, 632)
 
 landings <- comland$comland[AREA %in% full.areas, ]
 
+landings526537 <- comland$comland[AREA %in% c(526, 537), ]
+
+
 # Try without this proportioning first
-# Try with--results in extremely high catches for some species so dont
+# Try with--aggregate_area function not working as before, way too high
+# by hand gives better results
 
 # #Areas 526 and 537 straddle Georges Bank.  The proprotion of catch inside
 # #and outside was calculated from the MS Keyrun project for Georges Bank.  We will use
 # #the proportion outside of Georges Bank for those Stat Areas.  The rest will be
 # #100% MAB
+# from https://github.com/NOAA-EDAB/ms-keyrun/blob/master/data/AllSpeciesProportions.rda
+
 load(here::here('data-raw/comlandr/AllSpeciesProportions.rda'))
 proportions <- AllSpeciesProportions
 proportions <- proportions[AREA %in% c(526, 537) & InOut == 'out', ]
 
-mab.split.land <- comlandr:::aggregate_area(comland, proportions, areaDescription = 'InOut',
-                                            useForeign = T, applyProp = T,
-                                 propDescription = 'MeanProp')
+mab.split.land <- dplyr::left_join(landings526537, proportions) |>
+  dplyr::mutate(propwt = SPPLIVMT * MeanProp) |>
+  dplyr::select(-c(SPPLIVMT, InOut, MeanProp)) |>
+  dplyr::rename(SPPLIVMT = propwt)
 
-mab.split.land$comland[, InOut := NULL]
-mab.split.land$comland[, AREA := 526537]
+# mab.split.land <- comlandr:::aggregate_area(comland, proportions, areaDescription = 'InOut',
+#                                             useForeign = F, applyProp = T,
+#                                  propDescription = 'MeanProp')
+#
+# mab.split.land$comland[, InOut := NULL]
+# mab.split.land$comland[, AREA := 526537]
 
 #Merge split landings with other landings
-landings <- rbindlist(list(landings, mab.split.land$comland), use.names = T)
+landings <- rbindlist(list(landings, mab.split.land), use.names = T)
 
 #Assign gears to fleets
 #Generate NEGEAR2 codes from NEGEAR
