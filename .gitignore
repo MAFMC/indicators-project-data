@@ -54,4 +54,5 @@ rsconnect/
 
 # zip files of raw data
 data-raw/MRIP/ignore_zips/
+data-raw/comlandr/ignore_rawpull/
 .Rproj.user
