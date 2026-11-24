@@ -107,11 +107,13 @@ landings[, FLEET := as.factor(FLEET)]
 
 # filter to Rpath years here
 landings8085 <- landings |>
-  dplyr::filter(YEAR %in% c(1980:1985))
+  dplyr::filter(YEAR %in% path.yrs)
 
 #Calculate mean for Rpath
-sum.land <- landings8085[, sum(SPPLIVMT), by = c('YEAR', 'NESPP3', 'FLEET')]
-mean.land <- sum.land[, mean(V1), by = c('NESPP3', 'FLEET')]
+#sum.land <- landings8085[, sum(SPPLIVMT), by = c('YEAR', 'NESPP3', 'FLEET')] #drops NAs
+sum.land <- landings8085 |> dplyr::group_by(YEAR, NESPP3, FLEET) |> dplyr::summarise(totland = sum(SPPLIVMT, na.rm = T))
+#mean.land <- sum.land[, mean(V1), by = c('NESPP3', 'FLEET')]
+mean.land <- sum.land |> dplyr::group_by(NESPP3, FLEET) |> dplyr::summarise(V1 = mean(totland, na.rm = T))
 data.table::setnames(mean.land, 'V1', 'SPPLIVMT')
 
 save(mean.land, file = here::here('data-raw/comlandr/mean_landings_mab_80_85_2026pull.RData'))
