@@ -114,6 +114,7 @@ landings8085 <- landings |>
 sum.land <- landings8085 |> dplyr::group_by(YEAR, NESPP3, FLEET) |> dplyr::summarise(totland = sum(SPPLIVMT, na.rm = T))
 #mean.land <- sum.land[, mean(V1), by = c('NESPP3', 'FLEET')]
 mean.land <- sum.land |> dplyr::group_by(NESPP3, FLEET) |> dplyr::summarise(V1 = mean(totland, na.rm = T))
+setDT(mean.land)
 data.table::setnames(mean.land, 'V1', 'SPPLIVMT')
 
 save(mean.land, file = here::here('data-raw/comlandr/mean_landings_mab_80_85_2026pull.RData'))
